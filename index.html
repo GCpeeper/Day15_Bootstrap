@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Truths and a Lie</title>
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: beige;">
-    <h1>Mr Sieg's Truth and Lie Game</h1>
-    <hr>
-    <h2>Introductions</h2>
-    <form action="" id="name-form">
-        <label for="fname">First Name:</label><br>
-        <input type="text" name="fname" id="fname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" name="lname" id="lname"><br>
-        <label for="age">Age:</label><br>
-        <input type="text" name="age" id="age"><br>
-    </form>
-    <br>
-    <input type="button" value="SUBMIT" onclick="greet();">
-    <p id="greet" style="font-size: x-large;">Welcome!</p>
-    <h2>Warm up trivia question</h2>
-    <p>What is the only food that cannot go bad?</p>
-    <p id="trivia-answer"></p>
-    <form action="">
-        <input type="radio" name="trivia1" id="chocolate">
-        <label for="chocolate">Dark Chocolate</label><br>
-        <input type="radio" name="trivia1" id="tuna">
-        <label for="tuna">Canned Tuna</label><br>
-        <input type="radio" name="trivia1" id="honey">
-        <label for="honey">Honey</label><br>
-    </form>
-    <input type="button" value="SUBMIT" onclick="trivia1();">
+<body class="bg-black text-white">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="eye.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                </a>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Bootstrap is for html</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue felis ut arcu sollicitudin, quis tempus tellus condimentum. Donec enim sem, viverra vitae vestibulum posuere, consectetur bibendum augue. Sed a eros sed dui interdum condimentum. Integer quis leo sit amet diam laoreet fermentum. Nam quam nunc, euismod quis odio a, lobortis pharetra risus. Suspendisse dictum mi eget lectus semper auctor et et felis. Suspendisse sed orci vitae tortor cursus sodales. Mauris at pretium nulla. Aliquam erat volutpat. Quisque faucibus odio est, at rutrum mi tempus nec. Praesent et sodales nisi. Integer mollis varius pellentesque. </p>
+                <a class="btn btn-primary" href="#">More on HTML</a>
+            </div>
+            <div class="col-md-6 p-4 border">
+                <h2>Bootstrap is for CSS</h2>
+                <p>Suspendisse potenti. Proin vel dui ac ligula pulvinar egestas. Nam vel augue vitae nulla maximus semper. Phasellus eu aliquam sem. Cras placerat rutrum tellus et malesuada. Duis aliquam purus a velit posuere cursus. Sed eget urna venenatis, pretium ligula ac, tristique neque. Duis lobortis in lorem id pellentesque. Donec elementum mi metus, et rhoncus lacus congue lobortis. Sed quis viverra nunc, id volutpat erat. Vestibulum posuere ante quis ornare scelerisque. Etiam cursus mattis purus ac suscipit. Suspendisse hendrerit sollicitudin nisi vel condimentum. Donec posuere varius urna pharetra ornare. Aenean lacinia porttitor facilisis. </p>
+                <a class="btn btn-primary">More on CSS</a>
+            </div>
+            <div class="col-md-3">
+                <h2>Bootstrap is for JS</h2>
+                <p>Mauris arcu lorem, facilisis et tristique vitae, luctus et leo. Quisque quis felis vulputate, rutrum libero eu, pretium ex. Integer nulla ex, lacinia et venenatis sit amet, vulputate eget nisl. Sed odio urna, auctor at velit quis, elementum porttitor enim. Curabitur bibendum mi tellus, eu consectetur augue dignissim eget. Pellentesque ut urna at sapien consectetur placerat. Vivamus eget tempus neque. Etiam id ante porttitor, auctor lectus ut, varius nunc. Praesent rutrum, nunc eget finibus facilisis, lectus ante hendrerit ipsum, ac rhoncus ex dolor eget purus. Nam vel ante nibh. Nunc non elit a sem cursus pretium nec ac risus. Duis tortor est, euismod sit amet suscipit quis, varius ut ligula. Vivamus faucibus efficitur gravida. Pellentesque non purus tempus, posuere lacus at, tempor nisl. Nulla faucibus massa a massa malesuada vehicula. </p>
+                <a class="btn btn-success" role="button">Do Something Cool with JS</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                
+            </div>
+            <div class="col-md-4">
 
-
-    <script src="js/truth.js"></script>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-1">
+                
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
